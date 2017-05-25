@@ -18,7 +18,7 @@ public class ActionActivity extends BaseActivity {
     Button btn_jinru;
 
 
-
+    Button btn_jinru1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
