@@ -6,7 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import net.cpsec.zfwx.lawyer_recruitment.R;
-
+/**心声提问*/
 public class XinShengTiWenActivity extends BaseActivity {
     private TextView tv_back,tv_complete;
     private EditText et_zhuti,et_zhengwen;

@@ -18,7 +18,7 @@ import net.cpsec.zfwx.lawyer_recruitment.utils.Toast;
 
 import java.util.Map;
 
-
+/**个人信息修改页面*/
 public class XiuGaiXinXiActivity extends BaseActivity implements View.OnClickListener {
     private ImageView iv_back;
     private RoundedImageView riv_header;
@@ -37,7 +37,7 @@ public class XiuGaiXinXiActivity extends BaseActivity implements View.OnClickLis
     private void initView() {
         iv_back = (ImageView) findViewById(R.id.iv_back);
         iv_back.setOnClickListener(this);
-        tv_complete = (TextView) findViewById(R.id.tv_fatie_complete);
+        tv_complete = (TextView) findViewById(R.id.tv_xinxi_complete);
         tv_complete.setOnClickListener(this);
         riv_header = (RoundedImageView) findViewById(R.id.riv_header);
         rbt_man = (RadioButton) findViewById(R.id.rbt_man);
@@ -74,6 +74,8 @@ public class XiuGaiXinXiActivity extends BaseActivity implements View.OnClickLis
         }
     }
 
+
+
     @Override
     public void onSuccess(String response, Map<String, String> headers, String url, int actionId) {
         super.onSuccess(response, headers, url, actionId);
@@ -82,6 +84,7 @@ public class XiuGaiXinXiActivity extends BaseActivity implements View.OnClickLis
                 Toast.prompt(this, JSON.parseObject(response).getString("infor"));
                 return;
             } else {
+                Toast.prompt(this, "修改个人信息成功");
                 Intent intent = new Intent(this, MyCenterActivity.class);
                 startActivity(intent);
             }

@@ -70,7 +70,8 @@
         <activity android:name=".activity.WenDaActivity" />
         <activity android:name=".activity.XinShengTiWenActivity" />
         <activity android:name=".activity.SouSuoActivity" />
-        <activity android:name=".activity.SelectPictureActivity"></activity>
+        <activity android:name=".activity.SelectPictureActivity" />
+        <activity android:name=".activity.WenTiXiangQictivity"/>
     </application>
 
 </manifest>

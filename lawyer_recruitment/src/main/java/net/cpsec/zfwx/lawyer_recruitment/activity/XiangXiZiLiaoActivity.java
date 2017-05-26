@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import net.cpsec.zfwx.lawyer_recruitment.R;
 
-
+/**详细资料*/
 public class XiangXiZiLiaoActivity extends Activity {
 
     @Override
